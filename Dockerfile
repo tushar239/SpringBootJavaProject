@@ -1,6 +1,10 @@
 # This example is taken from
 # https://www.youtube.com/watch?v=6vjo3pMXW7I
 
+# docker build -t samplespringbootjavaproject .
+# docker run -it --rm -p 8085:8080 --name=samplespringbootjavaprojectcontainer1 -v /Users/chokst/Desktop/Temp/sampledockervolume:/data samplespringbootapplication
+# access application using localhost:8085/hello/index
+
 FROM tomcat:8.5-alpine
 
 # copying war from target folder to container's tomcat
